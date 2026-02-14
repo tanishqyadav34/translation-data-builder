@@ -28,5 +28,19 @@ A powerful tool to build parallel and aligned datasets for machine translation m
 
 - **Text Alignment:** Automatically aligns sentences using NLTK's robust segmentation.
 - **Interactive Editing:** Easily correct misaligned or empty pairs directly in the browser.
-- **Filtering:** Filter by character length ratio to quickly identify and remove bad alignments.
-- **Export Formats:** Supports CSV and JSON for compatibility with most ML pipelines.
+## Deployment
+
+### Deploy to Streamlit Community Cloud (Free)
+
+1.  **Push to GitHub:**
+    *   Initialize a GitHub repository and push your code.
+    *   (Your local folder is already a git repository, just add the remote origin).
+2.  **Deploy:**
+    *   Go to [share.streamlit.io](https://share.streamlit.io/).
+    *   Connect your GitHub account.
+    *   Select your new repository.
+    *   Click **Deploy!**
+
+### Deploy to Render/Railway
+*   Use the `requirements.txt` file provided.
+*   Ensure the start command is set to `streamlit run app.py --server.port $PORT`.
